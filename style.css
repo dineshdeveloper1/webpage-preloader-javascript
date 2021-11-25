@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1567870835539-c8e3dd520a82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.page_inner{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+}
+.page_inner span{
+    font-size: 24px;
+    display: contents;
+}
+.page_inner span a{
+    color: #bde9c9;
+    display: contents;
+}
+
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader_inner{
+    font-size: 64px;
+    color: white;
+}
+
+.show{
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: all 0.5s ease;
+}
